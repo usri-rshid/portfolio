@@ -20,3 +20,14 @@ window.onmousemove = (e) => {
   cursor2.style.top = e.pageY + "px";
   cursor2.style.left = e.pageX + "px";
 };
+
+document.querySelectorAll("a").forEach((links) => {
+  links.onmouseenter = () => {
+    cursor1.classList.add("active");
+    cursor2.classList.add("active");
+  };
+  links.onmouseleave = () => {
+    cursor1.classList.remove("active");
+    cursor2.classList.remove("active");
+  };
+});
