@@ -3,7 +3,10 @@
 /* colors:#FF204E
 #A0153E
 #5D0E41
-#00224D  */
+#00224D  
+#f6f5f2
+#0C0C0C
+*/
 
 :root {
     --main-color: #FF204E;
@@ -43,5 +46,101 @@ header {
     align-items: center;
     justify-content: space-between;
     z-index: 1000;
+    flex-flow: column;
+    padding: 8rem 2rem;
+    width: 30rem;
+    text-align: center;
+}
+
+header .logo {
+    text-transform: uppercase;
+    color: #f6f5f2;
+    font-size: 3rem;
+    font-weight: 800;
+}
+
+header .logo span {
+    text-transform: uppercase;
+    color: var(--main-color);
+
+}
+
+header .navbar a {
+    display: block;
+    font-size: 2rem;
+    color: #f6f5f2;
+}
+
+header .navbar a:hover {
+    letter-spacing: 0.2rem;
+    color: var(--main-color);
+    text-shadow: 0 0 10px var(--main-color);
+
+}
+
+header .follow a {
+    font-size: 2.5rem;
+    color: #f6f5f2;
+    margin: 0 .7rem;
+
+}
+
+header .follow a:hover {
+    color: var(--main-color);
+    text-shadow: 0 0 10px var(--main-color);
+
+}
+
+#menu-bars {
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    z-index: 100000;
+    background: var(--main-color);
+    color: #F6F5F2;
+    border-radius: .5rem;
+    padding: 0.75rem 1rem;
+    font-size: 2rem;
+    cursor: pointer;
+    display: none;
+}
+
+
+
+@media (max-width:991px) {
+
+    html {
+        font-size: 45%;
+    }
+
+    body {
+        padding: 0;
+
+    }
+
+    #menu-bars {
+        display: initial;
+    }
+
+    header {
+        left: -120%;
+    }
+
+    header.active {
+        left: 0%;
+    }
+
+
+}
+
+@media (max-width:450px) {
+
+    html {
+        font-size: 50%
+    }
+
+    header {
+        width: 100%;
+    }
 
 }
