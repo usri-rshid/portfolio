@@ -2,7 +2,7 @@
 
 #### ressources
 [iloveimg](https://www.iloveimg.com/fr)
-[iloveimg](https://www.iloveimg.com/fr)
+[pixabay](https://pixabay.com/)
 [fonts.google](https://fonts.google.com/)
 [fontawesome](https://fontawesome.com/)
 [colorhunt.co](https://colorhunt.co/palette/ff204ea0153e5d0e4100224d)
