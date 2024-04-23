@@ -219,7 +219,7 @@ section {
     padding: .5rem 0;
 }
 
-.about .heading {
+.heading {
     font-size: 4rem;
     color: #0C0C0C;
     padding-bottom: 1rem;
@@ -227,7 +227,7 @@ section {
 
 }
 
-.about .heading span {
+.heading span {
     font-size: 4rem;
     color: var(--main-color);
     padding-bottom: 1rem;
@@ -431,6 +431,58 @@ section {
     padding-top: 1rem;
 }
 
+.experience .box-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.experience .box-container .box {
+    position: relative;
+    flex: 1 1 33rem;
+    border-left: .2rem solid var(--main-color);
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-bottom: 2rem;
+}
+
+.experience .box-container .box:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -1rem;
+    height: 2rem;
+    width: 2rem;
+    border-radius: 50%;
+    background: var(--main-color);
+
+}
+
+.experience .box-container .box .content {
+    background: #fff;
+    padding: 1.5rem;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.1);
+}
+
+.experience .box-container .box .content span {
+    color: #fff;
+    font-size: 1.7rem;
+    background: var(--main-color);
+    border-radius: 50rem;
+    padding: .4rem 1rem;
+}
+
+.experience .box-container .box .content h3 {
+    font-size: 2.5rem;
+    padding: 0.5rem 0;
+    color: #000:
+}
+
+.experience .box-container .box .content p {
+    font-size: 1.5rem;
+    color: #555:
+}
+
 .btn {
     display: inline-block;
     margin-top: 1rem;
@@ -493,6 +545,10 @@ section {
 
     header {
         width: 100%;
+    }
+
+    .experience .box-container .box {
+        padding-right: 0;
     }
 
 }
