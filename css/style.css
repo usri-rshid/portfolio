@@ -502,22 +502,28 @@ section {
     overflow: hidden;
     border: 1rem solid #fff;
     box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.1);
+    border-radius: .5rem;
 }
 
 .portfolio .box-container .box img {
     height: 100%;
     width: 100%;
     object-fit: cover;
-    /* position: relative;
-    z-index: 1; */
+    position: relative;
+    z-index: 1;
     border-radius: .5rem;
+}
+
+.portfolio .box-container .box:hover img {
+    height: 75%;
+    width: 75%;
 }
 
 .portfolio .box-container .box h3 {
 
     position: absolute;
     bottom: .5rem;
-    left: .5rem;
+    left: 1rem;
     font-size: 2.5rem;
     color: var(--main-color);
     text-transform: uppercase;
@@ -530,15 +536,25 @@ section {
 }
 
 .portfolio .box-container .box .icons a {
-    position: absolute;
-    top: 4rem;
-    right: 4rem;
+    display: block;
+    height: 4rem;
+    width: 4rem;
     border-radius: .5rem;
     background: #fff;
     color: #555;
-    font-size: 1.5rem;
+    font-size: 1.7rem;
+    line-height: 4rem;
+    text-align: center;
+    margin-bottom: 1rem;
 
 }
+
+.portfolio .box-container .box .icons a:hover {
+    background: var(--main-color);
+    color: #fff;
+}
+
+
 
 .btn {
     display: inline-block;
@@ -608,4 +624,14 @@ section {
         padding-right: 0;
     }
 
+    .experience .box-container .box .content h3 {
+        font-size: 2.5rem;
+        padding: .5rem 0;
+        color: #000;
+    }
+
+    .experience .box-container .box .content p {
+        font-size: 1.5rem;
+        color: #555;
+    }
 }
