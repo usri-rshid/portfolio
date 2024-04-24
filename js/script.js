@@ -31,3 +31,14 @@ document.querySelectorAll("a").forEach((links) => {
     cursor2.classList.remove("active");
   };
 });
+
+let lightDark = document.querySelector(".lightDark");
+let body = document.querySelector("body");
+
+let dark = false;
+
+lightDark.onclick = function () {
+  dark = !dark;
+  lightDark.classList.toggle("active");
+  body.classList.toggle("dark");
+};
