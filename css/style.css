@@ -142,7 +142,7 @@ header .logo {
 
 header .logo span {
     text-transform: uppercase;
-    color: var(--main-color);
+    color: #FF204E;
 
 }
 
@@ -734,6 +734,9 @@ header .btns.active i:nth-child(2) {
     display: block;
 }
 
+.imgDark {
+    filter: invert(70%);
+}
 
 /*end */
 @media (max-width:991px) {

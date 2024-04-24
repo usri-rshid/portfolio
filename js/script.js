@@ -34,11 +34,14 @@ document.querySelectorAll("a").forEach((links) => {
 
 let lightDark = document.querySelector(".lightDark");
 let body = document.querySelector("body");
-
+let img = document.querySelectorAll("img");
 let dark = false;
 
 lightDark.onclick = function () {
   dark = !dark;
   lightDark.classList.toggle("active");
   body.classList.toggle("dark");
+  img.forEach((i) => {
+    i.classList.toggle("imgDark");
+  });
 };
