@@ -626,6 +626,13 @@ section {
     border-radius: 0.5rem;
 }
 
+.contact .row form input,
+.contact .row form textarea {
+
+    background: var(--white);
+
+}
+
 .contact .row .map {
     flex: 1 1 35rem;
     border: 1rem solid var(--white);
@@ -653,6 +660,7 @@ section {
 .contact .row form .box::placeholder,
 .contact .row form textarea::placeholder {
     text-transform: capitalize;
+    color: var(--grey)
 }
 
 .contact .row form textarea {
@@ -735,7 +743,12 @@ header .btns.active i:nth-child(2) {
 }
 
 .imgDark {
-    filter: invert(70%);
+    filter: invert(40%);
+}
+
+.auto-type,
+.auto-type0 {
+    color: var(--main-color);
 }
 
 /*end */

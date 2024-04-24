@@ -44,8 +44,8 @@
     <section id="home" class="home">
         <div class="content">
             <span class="hi">hello there ...</span>
-            <h3> I AM <span> Usri Rshid</span></span></h3>
-            <p class="info"> i am a full stack developer</p>
+            <h3> I AM <span> Usri Rshid</span></h3>
+            <p class="info"> i am a <span class="auto-type">full stack developer</span></p>
             <p class="text"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat itaque atque iure
                 deserunt facilis cum necessitatibus recusandae similique maxime quisquam? Aut sed illo possimus ullam?
                 Debitis perferendis consequatur consectetur maiores.</p>
@@ -64,7 +64,8 @@
                 <img src="images/about.jpeg" alt="image about me">
             </div>
             <div class="content">
-                <h3> my name is usri rshid & i am full stack developer</h3>
+                <h3> my name is usri rshid & i am <span class="auto-type0"> full stack
+                        developer</span></h3>
                 <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum porro numquam laudantium omnis
                     pariatur id beatae ab cum, culpa nam cupiditate repudiandae quibusdam, illo aliquam temporibus
@@ -83,8 +84,10 @@
                         <p><span>email </span> : usrirachid@gmail.com</p>
                         <p><span>country </span> : morocco </p>
                     </div>
-                    <a href="#" class="btn">downdload CV</a>
-                    <a href="#" class="btn">hire me</a>
+                    <div>
+                        <a href="#" class="btn">downdload CV</a>
+                        <a href="#" class="btn">hire me</a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -342,6 +345,35 @@
     <script src="js/script.js">
 
     </script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js">
+    </script>
+    <script>
+        var typed = new Typed(".auto-type", {
+            strings: [
+                "Full stack developer",
+                "Freelancer",
+                "Blogger",
+                "Software Engineer",
+            ],
+            typeSpeed: 100,
+            backSpeed: 100,
+            loop: true,
+        });
+    </script>
+    <script>
+        var typed = new Typed(".auto-type0", {
+            strings: [
+                "Full stack developer",
+                "Freelancer",
+                "Blogger",
+                "Software Engineer",
+            ],
+            typeSpeed: 100,
+            backSpeed: 100,
+            loop: true,
+        });
+    </script>
+
 </body>
 
 </html>
