@@ -630,8 +630,15 @@ section {
 .contact .row form textarea {
 
     background: var(--white);
-
+    color: var(--black);
 }
+
+.contact .row textarea:focus,
+.contact .row input:focus {
+    color: #FF204E;
+}
+
+
 
 .contact .row .map {
     flex: 1 1 35rem;
